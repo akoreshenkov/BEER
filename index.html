@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <meta http-equiv='X-UA-Compatible' content='IE=Edge'/>
+        <title>beer</title>
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+    <body>
+        <div class="main">
+            <div class="banner-block">                      <!--БАНЕР-->
+                <p class="banner-title">КРАФТОВОЕ ПИВО</p>
+                <p class="banner-subtitle">С ДОСТАВКОЙ ПО ВСЕЙ РОССИИ</p>
+                <div class="left-banner-line"></div>
+                <div class="right-banner-line"></div>
+                <a href="#" class="banner-button">
+                    <span class="banner-button-text">Перейти в каталог</span>
+                </a>
+            </div>
+            <div class="card-list-title">Вам может понравиться</div>
+            <div class="main__row">
+                <div class="main__column">
+                    <div class="filters">                   <!--ФИЛЬТРЫ-->
+                        <div class="question-block">
+                            <span class="question-block__text">Не знаю чего хочу</span>
+                        </div>
+                        <div class="price-block">
+                            <div class="title">Цена</div>
+                            <input class="from" maxlength="4" placeholder="" type="text" name="price" value="240">
+                            <input class="to" maxlength="4" placeholder="" type="text" name="price" value="860">
+                        </div>
+                        <div class="volume-block">
+                            <div class="title">Объем</div>
+                            <img class="line" src="./img/line.svg">
+                            <div class="volume-block__container">
+                                <div class="volume-block__column">
+                                    <div class="volume-block__item"><span class="active">0.33 л</span></div>
+                                    <div class="volume-block__item"><span>0.355 л</span></div>
+                                    <div class="volume-block__item"><span>0.4 л</span></div>
+                                    <div class="volume-block__item"><span class="active">0.5 л</span></div>
+                                </div>
+                                <div class="volume-block__column">
+                                    <div class="volume-block__item"><span class="active">0.75 л</span></div>
+                                    <div class="volume-block__item"><span>1 л</span></div>
+                                    <div class="volume-block__item"><span>5 л</span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="strength-block">
+                            <div class="title">Крепость</div>
+                            <img class="line" src="./img/line.svg" style="transform: rotate(180deg);">
+                        </div>
+                        <div class="brand-block">
+                            <div class="title">Бренд</div>
+                            <img class="line" src="./img/line.svg" style="transform: rotate(180deg);">
+                        </div>
+                    </div>
+                </div>  
+                <div class="main__column">
+                    <div class="card-list">                 
+                        <div class="card-list__row">        <!--КАРТОЧКИ ТОВАРОВ-->
+                            <div class="card-list__column">
+                                <div class="card">
+                                    <div class="upper-info">
+                                        <div class="upper-info__row">
+                                            <div class="upper-info__column">
+                                                <img src="./img/star.svg">
+                                                <div class="rating">4.5</div>
+                                            </div>
+                                            <div class="upper-info__column">
+                                                <img src="./img/like.svg">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div style="position: relative;">
+                                        <div class="marker new">новинка</div>
+                                    </div>
+                                    <div class="description">
+                                        <p class="marker">Мексика
+                                        <p class="marker">0.5 л
+                                        <div class="name">Атомная прачечная</div>
+                                        <div class="articul">Арт. 962961028</div>
+                                        <div class="price">350 ₽</div>
+                                    </div>
+                                    <img  class="cart" src="./img/cart.png">
+                                    <img  class="shadow" src="./img/Rectangle-32.png">
+                                </div>  
+                            </div>
+                            <div class="card-list__column">
+                                <div class="card">
+                                    <div class="upper-info">
+                                        <div class="upper-info__row">
+                                            <div class="upper-info__column">
+                                                <img src="./img/star.svg">
+                                                <div class="rating">4.5</div>
+                                            </div>
+                                            <div class="upper-info__column">
+                                                <img src="./img/like.svg">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="description">
+                                        <p class="marker">Мексика
+                                        <p class="marker">0.5 л
+                                        <div class="name">Jaws EXP.2</div>
+                                        <div class="articul">Арт. 962961028</div>
+                                        <div class="price">350 ₽</div>
+                                    </div>
+                                    <img  class="cart" src="./img/cart.png">
+                                </div>  
+                            </div>
+                            <div class="card-list__column">
+                                <div class="card">
+                                    <div class="upper-info">
+                                        <div class="upper-info__row">
+                                            <div class="upper-info__column">
+                                                <img src="./img/star.svg">
+                                                <div class="rating">4.5</div>
+                                            </div>
+                                            <div class="upper-info__column">
+                                                <img src="./img/like.svg">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="description">
+                                        <p class="marker">Мексика
+                                        <p class="marker">0.5 л
+                                        <div class="name">Jaws EXP.2</div>
+                                        <div class="articul">Арт. 962961028</div>
+                                        <div class="price">350 ₽</div>
+                                    </div>
+                                    <img  class="cart" src="./img/cart.png">
+                                </div>  
+                            </div>
+                            <div class="card-list__column">
+                                <div class="card">
+                                    <div class="upper-info">
+                                        <div class="upper-info__row">
+                                            <div class="upper-info__column">
+                                                <img src="./img/star.svg">
+                                                <div class="rating">4.5</div>
+                                            </div>
+                                            <div class="upper-info__column">
+                                                <img src="./img/like.svg">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="description">
+                                        <p class="marker">Мексика
+                                        <p class="marker">0.5 л
+                                        <div class="name">Jaws EXP.2</div>
+                                        <div class="articul">Арт. 962961028</div>
+                                        <div class="price">350 ₽</div>
+                                    </div>
+                                    <img  class="cart" src="./img/cart.png">
+                                </div>  
+                            </div>
+                            <div class="card-list__column">
+                                <div class="card">
+                                    <div class="upper-info">
+                                        <div class="upper-info__row">
+                                            <div class="upper-info__column">
+                                                <img src="./img/star.svg">
+                                                <div class="rating">4.5</div>
+                                            </div>
+                                            <div class="upper-info__column">
+                                                <img src="./img/like.svg">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="description">
+                                        <p class="marker">Мексика
+                                        <p class="marker">0.5 л
+                                        <div class="name">Jaws EXP.2</div>
+                                        <div class="articul">Арт. 962961028</div>
+                                        <div class="price">350 ₽</div>
+                                    </div>
+                                    <img  class="cart" src="./img/cart.png">
+                                </div>  
+                            </div>
+                            <div class="card-list__column">
+                                <div class="card">
+                                    <div class="upper-info">
+                                        <div class="upper-info__row">
+                                            <div class="upper-info__column">
+                                                <img src="./img/star.svg">
+                                                <div class="rating">4.5</div>
+                                            </div>
+                                            <div class="upper-info__column">
+                                                <img src="./img/like.svg">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="description">
+                                        <p class="marker">Мексика
+                                        <p class="marker">0.5 л
+                                        <div class="name">Jaws EXP.2</div>
+                                        <div class="articul">Арт. 962961028</div>
+                                        <div class="price">350 ₽</div>
+                                    </div>
+                                    <img  class="cart" src="./img/cart.png">
+                                </div>  
+                            </div>
+                            <div class="card-list__column">
+                                <div class="card">
+                                    <div class="upper-info">
+                                        <div class="upper-info__row">
+                                            <div class="upper-info__column">
+                                                <img src="./img/star.svg">
+                                                <div class="rating">4.5</div>
+                                            </div>
+                                            <div class="upper-info__column">
+                                                <img src="./img/like.svg">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="description">
+                                        <p class="marker">Мексика
+                                        <p class="marker">0.5 л
+                                        <div class="name">Jaws EXP.2</div>
+                                        <div class="articul">Арт. 962961028</div>
+                                        <div class="price">350 ₽</div>
+                                    </div>
+                                    <img  class="cart" src="./img/cart.png">
+                                </div>  
+                            </div>
+                            <div class="card-list__column">
+                                <div class="card">
+                                    <div class="upper-info">
+                                        <div class="upper-info__row">
+                                            <div class="upper-info__column">
+                                                <img src="./img/star.svg">
+                                                <div class="rating">4.5</div>
+                                            </div>
+                                            <div class="upper-info__column">
+                                                <img src="./img/like.svg">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div style="position: relative;">
+                                        <div class="marker new">новинка</div>
+                                    </div>
+                                    <div class="description">
+                                        <p class="marker">Мексика
+                                        <p class="marker">0.5 л
+                                        <div class="name">Jaws EXP.2</div>
+                                        <div class="articul">Арт. 962961028</div>
+                                        <div class="price">350 ₽</div>
+                                    </div>
+                                    <img  class="cart" src="./img/cart.png">
+                                </div>  
+                            </div>
+                            <div class="card-list__column">
+                                <div class="card">
+                                    <div class="upper-info">
+                                        <div class="upper-info__row">
+                                            <div class="upper-info__column">
+                                                <img src="./img/star.svg">
+                                                <div class="rating">4.5</div>
+                                            </div>
+                                            <div class="upper-info__column">
+                                                <img src="./img/like.svg">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div style="position: relative;">
+                                        <div class="marker new">новинка</div>
+                                    </div>
+                                    <div class="description">
+                                        <p class="marker">Мексика
+                                        <p class="marker">0.5 л
+                                        <div class="name">Jaws EXP.2</div>
+                                        <div class="articul">Арт. 962961028</div>
+                                        <div class="price">350 ₽</div>
+                                    </div>
+                                    <img  class="cart" src="./img/cart.png">
+                                </div>  
+                            </div>
+                            <div class="card-list__column">
+                                <div class="card">
+                                    <div class="upper-info">
+                                        <div class="upper-info__row">
+                                            <div class="upper-info__column">
+                                                <img src="./img/star.svg">
+                                                <div class="rating">4.5</div>
+                                            </div>
+                                            <div class="upper-info__column">
+                                                <img src="./img/like.svg">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div style="position: relative;">
+                                        <div class="marker new">новинка</div>
+                                    </div>
+                                    <div class="description">
+                                        <p class="marker">Мексика
+                                        <p class="marker">0.5 л
+                                        <div class="name">Jaws EXP.2</div>
+                                        <div class="articul">Арт. 962961028</div>
+                                        <div class="price">350 ₽</div>
+                                    </div>
+                                    <img  class="cart" src="./img/cart.png">
+                                </div>  
+                            </div>
+                            <div class="card-list__column">
+                                <div class="card">
+                                    <div class="upper-info">
+                                        <div class="upper-info__row">
+                                            <div class="upper-info__column">
+                                                <img src="./img/star.svg">
+                                                <div class="rating">4.5</div>
+                                            </div>
+                                            <div class="upper-info__column">
+                                                <img src="./img/like.svg">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="description">
+                                        <p class="marker">Мексика
+                                        <p class="marker">0.5 л
+                                        <div class="name">Jaws EXP.2</div>
+                                        <div class="articul">Арт. 962961028</div>
+                                        <div class="price">350 ₽</div>
+                                    </div>
+                                    <img  class="cart" src="./img/cart.png">
+                                </div>  
+                            </div>
+                            <div class="card-list__column">
+                                <div class="card">
+                                    <div class="upper-info">
+                                        <div class="upper-info__row">
+                                            <div class="upper-info__column">
+                                                <img src="./img/star.svg">
+                                                <div class="rating">4.5</div>
+                                            </div>
+                                            <div class="upper-info__column">
+                                                <img src="./img/like.svg">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="description">
+                                        <p class="marker">Мексика
+                                        <p class="marker">0.5 л
+                                        <div class="name">Jaws EXP.2</div>
+                                        <div class="articul">Арт. 962961028</div>
+                                        <div class="price">350 ₽</div>
+                                    </div>
+                                    <img  class="cart" src="./img/cart.png">
+                                </div>  
+                            </div>
+                            <div class="card-list__column">
+                                <div class="card" style="margin-bottom: 0;">
+                                    <div class="upper-info">
+                                        <div class="upper-info__row">
+                                            <div class="upper-info__column">
+                                                <img src="./img/star.svg">
+                                                <div class="rating">4.5</div>
+                                            </div>
+                                            <div class="upper-info__column">
+                                                <img src="./img/like.svg">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="description">
+                                        <p class="marker">Мексика
+                                        <p class="marker">0.5 л
+                                        <div class="name">Jaws EXP.2</div>
+                                        <div class="articul">Арт. 962961028</div>
+                                        <div class="price">350 ₽</div>
+                                    </div>
+                                    <img  class="cart" src="./img/cart.png">
+                                </div>  
+                            </div>
+                            <div class="card-list__column">
+                                <div class="card" style="margin-bottom: 0;">
+                                    <div class="upper-info">
+                                        <div class="upper-info__row">
+                                            <div class="upper-info__column">
+                                                <img src="./img/star.svg">
+                                                <div class="rating">4.5</div>
+                                            </div>
+                                            <div class="upper-info__column">
+                                                <img src="./img/like.svg">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="description">
+                                        <p class="marker">Мексика
+                                        <p class="marker">0.5 л
+                                        <div class="name">Jaws EXP.2</div>
+                                        <div class="articul">Арт. 962961028</div>
+                                        <div class="price">350 ₽</div>
+                                    </div>
+                                    <img  class="cart" src="./img/cart.png">
+                                </div>  
+                            </div>
+                            <div class="card-list__column">
+                                <div class="card" style="margin-bottom: 0;">
+                                    <div class="upper-info">
+                                        <div class="upper-info__row">
+                                            <div class="upper-info__column">
+                                                <img src="./img/star.svg">
+                                                <div class="rating">4.5</div>
+                                            </div>
+                                            <div class="upper-info__column">
+                                                <img src="./img/like.svg">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="description">
+                                        <p class="marker">Мексика
+                                        <p class="marker">0.5 л
+                                        <div class="name">Jaws EXP.2</div>
+                                        <div class="articul">Арт. 962961028</div>
+                                        <div class="price">350 ₽</div>
+                                    </div>
+                                    <img  class="cart" src="./img/cart.png">
+                                </div>  
+                            </div>
+                            <div class="card-list__column">
+                                <div class="card" style="margin-bottom: 0;">
+                                    <div class="upper-info">
+                                        <div class="upper-info__row">
+                                            <div class="upper-info__column">
+                                                <img src="./img/star.svg">
+                                                <div class="rating">4.5</div>
+                                            </div>
+                                            <div class="upper-info__column">
+                                                <img src="./img/like.svg">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div style="position: relative;">
+                                        <div class="marker new">новинка</div>
+                                    </div>
+                                    <div class="description">
+                                        <p class="marker">Мексика
+                                        <p class="marker">0.5 л
+                                        <div class="name">Jaws EXP.2</div>
+                                        <div class="articul">Арт. 962961028</div>
+                                        <div class="price">350 ₽</div>
+                                    </div>
+                                    <img  class="cart" src="./img/cart.png">
+                                </div>  
+                            </div>
+                        </div>
+                        <div class="catalog-link"><a href="#"><span class="catalog-link__text">Прейти в каталог</span></a></div>
+                    </div>
+                </div> 
+            </div>
+        </div>
+    </body>
+</html>
