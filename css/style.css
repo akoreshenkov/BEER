@@ -93,7 +93,7 @@ body {
   margin-bottom: 70px;
   position: relative;
   padding: 24px;
-  background: #F0EEF3 url("/img/big-banner.png") 100% 50%/auto no-repeat;
+  background: #F0EEF3 url("./img/big-banner.png") 100% 50%/auto no-repeat;
   box-shadow: 0 13px 14px rgba(57, 57, 57, 0.1921568627);
   border-radius: 16px;
 }
@@ -145,7 +145,7 @@ body {
   top: 40%;
   left: 20px;
   border-radius: 50%;
-  background: rgba(255, 255, 255, 0.7843137255) url("/img/banner-line.svg") 50% no-repeat;
+  background: rgba(255, 255, 255, 0.7843137255) url("./img/banner-line.svg") 50% no-repeat;
   cursor: pointer;
   transform: rotate(180deg);
   transition: all 0.15s ease-in-out;
@@ -163,7 +163,7 @@ body {
   top: 40%;
   right: 20px;
   border-radius: 50%;
-  background: rgba(255, 255, 255, 0.7843137255) url("/img/banner-line.svg") 50% no-repeat;
+  background: rgba(255, 255, 255, 0.7843137255) url("./img/banner-line.svg") 50% no-repeat;
   cursor: pointer;
   transition: all 0.15s ease-in-out;
 }
@@ -216,7 +216,7 @@ body {
   bottom: -1px;
   width: 18px;
   height: 18px;
-  background: url("/img/question.svg") 50%/18px no-repeat;
+  background: url("./img/question.svg") 50%/18px no-repeat;
 }
 .filters .title {
   font-size: 20px;
@@ -234,7 +234,7 @@ body {
   padding: 20px;
   position: relative;
   border-radius: 16px;
-  background: #ffffff url("/img/price-line.svg") 50% 45% no-repeat;
+  background: #ffffff url("./img/price-line.svg") 50% 45% no-repeat;
 }
 .filters .price-block .from {
   width: 32%;
@@ -251,7 +251,7 @@ body {
   font-size: 16px;
   font-weight: 500;
   line-height: 77.19%;
-  background: url("/img/rubl.svg") 88% 50%/auto 12px no-repeat, url("/img/from.svg") 12% 56%/15px no-repeat;
+  background: url("./img/rubl.svg") 88% 50%/auto 12px no-repeat, url("./img/from.svg") 12% 56%/15px no-repeat;
 }
 .filters .price-block .to {
   width: 32%;
@@ -268,7 +268,7 @@ body {
   font-size: 16px;
   font-weight: 500;
   line-height: 77.19%;
-  background: url("/img/rubl.svg") 88% 50%/auto 12px no-repeat, url("/img/to.svg") 12% 56%/16px no-repeat;
+  background: url("../img/rubl.svg") 88% 50%/auto 12px no-repeat, url("../img/to.svg") 12% 56%/16px no-repeat;
 }
 .filters .volume-block {
   height: 245px;
@@ -316,7 +316,7 @@ body {
   display: inline-block;
   width: 24px;
   height: 12px;
-  background: url("/img/cross.svg") 100% 50%/auto no-repeat;
+  background: url("../img/cross.svg") 100% 50%/auto no-repeat;
 }
 .filters .strength-block {
   height: 55px;
@@ -368,7 +368,7 @@ body {
   display: inline-block;
   width: 24px;
   height: 24px;
-  background: url("/img/line-right.svg") 100% 50%/24px no-repeat;
+  background: url("../img/line-right.svg") 100% 50%/24px no-repeat;
   transition: 0.3s ease-in-out;
 }
 .card-list__row {
@@ -383,7 +383,7 @@ body {
   height: 420px;
   padding: 24px;
   margin: 0 0 24px 0;
-  background: #ffffff url("/img/Jaws_EXP-2_page-1.png") 50% 35px/auto 240px no-repeat;
+  background: #ffffff url("../img/Jaws_EXP-2_page-1.png") 50% 35px/auto 240px no-repeat;
   border-radius: 16px;
   transition: 0.15s ease-in-out;
 }

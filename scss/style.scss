@@ -29,7 +29,7 @@ body {
         position: relative;
         padding: 24px;
 
-        background: #F0EEF3 url("/img/big-banner.png") 100% 50%/auto no-repeat;
+        background: #F0EEF3 url("./img/big-banner.png") 100% 50%/auto no-repeat;
         box-shadow: 0 13px 14px #39393931;
         border-radius: 16px;
         .banner-title {
@@ -85,7 +85,7 @@ body {
             left: 20px;
 
             border-radius: 50%;
-            background: #ffffffc8 url("/img/banner-line.svg") 50% no-repeat;
+            background: #ffffffc8 url("./img/banner-line.svg") 50% no-repeat;
             cursor: pointer;
             transform: rotate(180deg);
             transition: all 0.15s ease-in-out;
@@ -104,7 +104,7 @@ body {
             right: 20px;
 
             border-radius: 50%;
-            background: #ffffffc8 url("/img/banner-line.svg") 50% no-repeat;
+            background: #ffffffc8 url("./img/banner-line.svg") 50% no-repeat;
             cursor: pointer;
             transition: all 0.15s ease-in-out;
             &:hover {
@@ -159,7 +159,7 @@ body {
                 width: 18px;
                 height: 18px;
                 
-                background: url("/img/question.svg") 50%/18px no-repeat;
+                background: url("./img/question.svg") 50%/18px no-repeat;
             }
         }
     }
@@ -180,7 +180,7 @@ body {
         position: relative;
 
         border-radius: 16px;
-        background: #ffffff url("/img/price-line.svg") 50% 45% no-repeat;
+        background: #ffffff url("./img/price-line.svg") 50% 45% no-repeat;
         .from {
             width: 32%;
             height: 30px;
@@ -197,7 +197,7 @@ body {
             font-size: 16px;
             font-weight: 500;
             line-height: 77.19%;
-            background: url("/img/rubl.svg") 88% 50%/auto 12px no-repeat, url("/img/from.svg") 12% 56%/15px no-repeat;
+            background: url("./img/rubl.svg") 88% 50%/auto 12px no-repeat, url("./img/from.svg") 12% 56%/15px no-repeat;
         }
         .to {
             width: 32%;
@@ -215,7 +215,7 @@ body {
             font-size: 16px;
             font-weight: 500;
             line-height: 77.19%;
-            background: url("/img/rubl.svg") 88% 50%/auto 12px no-repeat, url("/img/to.svg") 12% 56%/16px no-repeat;
+            background: url("../img/rubl.svg") 88% 50%/auto 12px no-repeat, url("../img/to.svg") 12% 56%/16px no-repeat;
         }
     }
     .volume-block {
@@ -259,7 +259,7 @@ body {
                                 display: inline-block;
                                 width: 24px;
                                 height: 12px;
-                                background: url("/img/cross.svg") 100% 50%/auto no-repeat;
+                                background: url("../img/cross.svg") 100% 50%/auto no-repeat;
                             }
                         }
                     }
@@ -322,7 +322,7 @@ body {
                 width: 24px;
                 height: 24px;
 
-                background: url("/img/line-right.svg") 100% 50%/24px no-repeat;
+                background: url("../img/line-right.svg") 100% 50%/24px no-repeat;
                 transition: 0.3s ease-in-out;
             }
         }
@@ -341,7 +341,7 @@ body {
     padding: 24px;
     margin: 0 0 24px 0;
 
-    background: #ffffff url("/img/Jaws_EXP-2_page-1.png") 50% 35px/auto 240px no-repeat;
+    background: #ffffff url("../img/Jaws_EXP-2_page-1.png") 50% 35px/auto 240px no-repeat;
     border-radius: 16px;
     transition: 0.15s ease-in-out;
     .upper-info {
