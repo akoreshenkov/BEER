@@ -127,6 +127,17 @@ body {
     width: 318px;
     position: sticky;
     top: 30px;
+
+    .title{
+        font-size: 20px;
+        font-weight: 500;
+        color: #393939;
+    }
+    .line {
+        position: absolute;
+        top: 24px;
+        right: 24px;
+    }
     .question-block {
         display: flex;
         height: 60px;
@@ -162,16 +173,6 @@ body {
                 background: url("../img/question.svg") 50%/18px no-repeat;
             }
         }
-    }
-    .title{
-        font-size: 20px;
-        font-weight: 500;
-        color: #393939;
-    }
-    .line {
-        position: absolute;
-        top: 24px;
-        right: 24px;
     }
     .price-block{
         height: 140px;
@@ -322,8 +323,8 @@ body {
                 width: 24px;
                 height: 24px;
 
-                background: url("../img/line-right.svg") 100% 50%/24px no-repeat;
-                transition: 0.3s ease-in-out;
+                background: url("../img/line-right.svg") 100% 50%/23px no-repeat;
+                transition: 0.15s ease-in-out;
             }
         }
     }

@@ -185,6 +185,16 @@ body {
   position: sticky;
   top: 30px;
 }
+.filters .title {
+  font-size: 20px;
+  font-weight: 500;
+  color: #393939;
+}
+.filters .line {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+}
 .filters .question-block {
   display: flex;
   height: 60px;
@@ -217,16 +227,6 @@ body {
   width: 18px;
   height: 18px;
   background: url("../img/question.svg") 50%/18px no-repeat;
-}
-.filters .title {
-  font-size: 20px;
-  font-weight: 500;
-  color: #393939;
-}
-.filters .line {
-  position: absolute;
-  top: 24px;
-  right: 24px;
 }
 .filters .price-block {
   height: 140px;
@@ -368,8 +368,8 @@ body {
   display: inline-block;
   width: 24px;
   height: 24px;
-  background: url("../img/line-right.svg") 100% 50%/24px no-repeat;
-  transition: 0.3s ease-in-out;
+  background: url("../img/line-right.svg") 100% 50%/23px no-repeat;
+  transition: 0.15s ease-in-out;
 }
 .card-list__row {
   display: flex;
