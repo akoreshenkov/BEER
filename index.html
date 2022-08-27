@@ -8,523 +8,575 @@
         <link rel="stylesheet" href="./css/style.css">
     </head>
     <body>
-        <header>
-            <div class="upper-nav">
-                <div class="left">
-                    <span class="location">Санкт-Петербург</span>
-                    <span class="adress"><span style="color: #a7a7a7;">Адрес бара:</span>&emsp;Москва, Тверская улица, дом 12</span>
+        <div class="wrapper">
+            <header>
+                <div class="upper-nav">
+                    <div class="left">
+                        <span class="location">Санкт-Петербург</span>
+                        <span class="adress"><span style="color: #a7a7a7;">Адрес бара:</span>&emsp;Москва, Тверская улица, дом 12</span>
+                    </div>
+                    <div class="right">
+                        <span class="phone">+7 495 365-11-02</span>
+                        <span class="ask-for-call">Заказать звонок</span>
+                        <span class="login">Войти</span>
+                    </div>
                 </div>
-                <div class="right">
-                    <span class="phone">+7 495 365-11-02</span>
-                    <span class="ask-for-call">Заказать звонок</span>
-                    <span class="login">Войти</span>
+                <div class="lower-nav">
+                    <a class="logos" href="#">
+                        <div class="logo"></div>
+                        <div class="company-name"></div>
+                    </a>
+                    <div class="catalog-buttom">
+                        <span class="catalog-buttom-text">Каталог</span>
+                    </div>
+                    <div class="input">
+                        <input type="text" maxlength="40" placeholder="Название, бренд, тип товара" name="search">
+                    </div>
+                    <span class="nav-links">Бар</span>
+                    <span class="nav-links">Доставка</span>
+                    <span class="nav-links">Экскурсии</span>
+                    <div class="liked"></div>
+                    <div class="cart-list"></div>
                 </div>
-            </div>
-            <div class="lower-nav">
-                <a class="logos" href="#">
-                    <div class="logo"></div>
-                    <div class="company-name"></div>
-                </a>
-                <div class="catalog-buttom">
-                    <span class="catalog-buttom-text">Каталог</span>
+            </header>
+            <div class="main">
+                <div class="banner-block">                      <!--БАНЕР-->
+                    <p class="banner-title">КРАФТОВОЕ ПИВО</p>
+                    <p class="banner-subtitle">С ДОСТАВКОЙ ПО ВСЕЙ РОССИИ</p>
+                    <div class="left-banner-line"></div>
+                    <div class="right-banner-line"></div>
+                    <a href="#" class="banner-button">
+                        <span class="banner-button-text">Перейти в каталог</span>
+                    </a>
                 </div>
-                <input type="text" maxlength="40" placeholder="Название, бренд, тип товара" name="search">
-                <span class="nav-links">Бар</span>
-                <span class="nav-links">Доставка</span>
-                <span class="nav-links">Экскурсии</span>
-                <div class="liked"></div>
-                <div class="cart-list"></div>
-            </div>
-        </header>
-        <div class="main">
-            <div class="banner-block">                      <!--БАНЕР-->
-                <p class="banner-title">КРАФТОВОЕ ПИВО</p>
-                <p class="banner-subtitle">С ДОСТАВКОЙ ПО ВСЕЙ РОССИИ</p>
-                <div class="left-banner-line"></div>
-                <div class="right-banner-line"></div>
-                <a href="#" class="banner-button">
-                    <span class="banner-button-text">Перейти в каталог</span>
-                </a>
-            </div>
-            <div class="banner-block__slider-nav">          <!--НАВИГАЦИЯ БАНЕРА-->
-                <div class="banner-block__slider-nav-row">
-                    <div class="banner-block__slider-nav-column banner-nav-column-active"></div>
-                    <div class="banner-block__slider-nav-column"></div>
-                    <div class="banner-block__slider-nav-column"></div>
-                    <div class="banner-block__slider-nav-column"></div>
+                <div class="banner-block__slider-nav">          <!--НАВИГАЦИЯ БАНЕРА-->
+                    <div class="banner-block__slider-nav-row">
+                        <div class="banner-block__slider-nav-column banner-nav-column-active"></div>
+                        <div class="banner-block__slider-nav-column"></div>
+                        <div class="banner-block__slider-nav-column"></div>
+                        <div class="banner-block__slider-nav-column"></div>
+                    </div>
                 </div>
-            </div>
-            <div class="card-list-title">Вам может понравиться</div>
-            <div class="main__row">
-                <div class="main__column">
-                    <div class="filters">                   <!--ФИЛЬТРЫ-->
-                        <div class="question-block">
-                            <span class="question-block__text">Не знаю чего хочу</span>
-                        </div>
-                        <div class="price-block">
-                            <div class="title">Цена</div>
-                            <input class="from" maxlength="4" placeholder="380" type="tel" name="price">
-                            <input class="to" maxlength="4" placeholder="760" type="tel" name="price">
-                        </div>
-                        <div class="volume-block">
-                            <div class="title">Объем</div>
-                            <img class="line" src="./img/line.svg">
-                            <div class="volume-block__container">
-                                <div class="volume-block__column">
-                                    <div class="volume-block__item"><span class="active">0.33 л</span></div>
-                                    <div class="volume-block__item"><span>0.355 л</span></div>
-                                    <div class="volume-block__item"><span>0.4 л</span></div>
-                                    <div class="volume-block__item"><span class="active">0.5 л</span></div>
+                <div class="card-list-title">Вам может понравиться</div>
+                <div class="main__row">
+                    <div class="main__column">
+                        <div class="filters">                   <!--ФИЛЬТРЫ-->
+                            <div class="question-block">
+                                <span class="question-block__text">Не знаю чего хочу</span>
+                            </div>
+                            <div class="price-block">
+                                <div class="title">Цена</div>
+                                <input class="from" maxlength="4" placeholder="380" type="tel" name="price">
+                                <input class="to" maxlength="4" placeholder="760" type="tel" name="price">
+                            </div>
+                            <div class="volume-block">
+                                <div class="title">Объем</div>
+                                <img class="line" src="./img/line.svg">
+                                <div class="volume-block__container">
+                                    <div class="volume-block__column">
+                                        <div class="volume-block__item"><span class="active">0.33 л</span></div>
+                                        <div class="volume-block__item"><span>0.355 л</span></div>
+                                        <div class="volume-block__item"><span>0.4 л</span></div>
+                                        <div class="volume-block__item"><span class="active">0.5 л</span></div>
+                                    </div>
+                                    <div class="volume-block__column">
+                                        <div class="volume-block__item"><span class="active">0.75 л</span></div>
+                                        <div class="volume-block__item"><span>1 л</span></div>
+                                        <div class="volume-block__item"><span>5 л</span></div>
+                                    </div>
                                 </div>
-                                <div class="volume-block__column">
-                                    <div class="volume-block__item"><span class="active">0.75 л</span></div>
-                                    <div class="volume-block__item"><span>1 л</span></div>
-                                    <div class="volume-block__item"><span>5 л</span></div>
+                            </div>
+                            <div class="strength-block">
+                                <div class="title">Крепость</div>
+                                <img class="line" src="img/line.svg" style="transform: rotate(180deg);">
+                            </div>
+                            <div class="brand-block">
+                                <div class="title">Бренд</div>
+                                <img class="line" src="./img/line.svg" style="transform: rotate(180deg);">
+                            </div>
+                        </div>
+                    </div>  
+                    <div class="main__column">
+                        <div class="card-list">                 
+                            <div class="card-list__row">        <!--КАРТОЧКИ ТОВАРОВ-->
+                                <div class="card-list__column">     <!--КАРТОЧКА 1-->
+                                    <div class="card">
+                                        <div class="upper-info">
+                                            <div class="upper-info__row">
+                                                <div class="upper-info__column">
+                                                    <div class="star"></div>
+                                                    <div class="rating">4.5</div>
+                                                </div>
+                                                <div class="upper-info__column">
+                                                    <div class="upper-info__item"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div style="position: relative;">
+                                            <div class="marker new">новинка</div>
+                                        </div>
+                                        <div class="description">
+                                            <p class="marker">Мексика
+                                            <p class="marker">0.5 л
+                                            <div class="name">Атомная прачечная</div>
+                                            <div class="articul">Арт. 962961028</div>
+                                            <div class="old-price">470 ₽</div>
+                                            <div class="price-sale">350&thinsp;₽</div>
+                                        </div>
+                                        <div  class="cart"></div>
+                                        <img  class="shadow" src="./img/Rectangle-32.png">
+                                    </div>
+                                </div>
+                                <div class="card-list__column">     <!--КАРТОЧКА 2-->
+                                    <div class="card">
+                                        <div class="upper-info">
+                                            <div class="upper-info__row">
+                                                <div class="upper-info__column">
+                                                    <div class="star"></div>
+                                                    <div class="rating">5.0</div>
+                                                </div>
+                                                <div class="upper-info__column">
+                                                    <div class="upper-info__item"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div style="position: relative;">
+                                            <div class="marker new">новинка</div>
+                                        </div>
+                                        <div class="description">
+                                            <p class="marker">Германия
+                                            <p class="marker">0.33 л
+                                            <div class="name">Kasteel</div>
+                                            <div class="articul">Арт. 152975033</div>
+                                            <div class="old-price blank">&thinsp;</div>
+                                            <div class="price">399&thinsp;₽</div>
+                                        </div>
+                                        <div  class="cart"></div>
+                                    </div>  
+                                </div>
+                                <div class="card-list__column">     <!--КАРТОЧКА 3-->
+                                    <div class="card">
+                                        <div class="upper-info">
+                                            <div class="upper-info__row">
+                                                <div class="upper-info__column">
+                                                    <div class="star"></div>
+                                                    <div class="rating">4.0</div>
+                                                </div>
+                                                <div class="upper-info__column">
+                                                    <div class="upper-info__item"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div style="position: relative;"></div>
+                                        <div class="description">
+                                            <p class="marker">Лихтенштейн
+                                            <p class="marker">0.5 л
+                                            <div class="name">Spot Session</div>
+                                            <div class="articul">Арт. 962961028</div>
+                                            <div class="old-price blank">&thinsp;</div>
+                                            <div class="price">349&thinsp;₽</div>
+                                        </div>
+                                        <div  class="cart"></div>
+                                    </div>  
+                                </div>
+                                <div class="card-list__column">     <!--КАРТОЧКА 4-->
+                                    <div class="card">
+                                        <div class="upper-info">
+                                            <div class="upper-info__row">
+                                                <div class="upper-info__column">
+                                                    <div class="star"></div>
+                                                    <div class="rating">3.9</div>
+                                                </div>
+                                                <div class="upper-info__column">
+                                                    <div class="upper-info__item"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div style="position: relative;"></div>
+                                        <div class="description">
+                                            <p class="marker">США
+                                            <p class="marker">0.75 л
+                                            <div class="name">Somnambula</div>
+                                            <div class="articul">Арт. 962961028</div>
+                                            <div class="old-price">1 299 ₽</div>
+                                            <div class="price-sale">899&thinsp;₽</div>
+                                        </div>
+                                        <div  class="cart"></div>
+                                    </div>  
+                                </div>
+                                <div class="card-list__column">     <!--КАРТОЧКА 5-->
+                                    <div class="card">
+                                        <div class="upper-info">
+                                            <div class="upper-info__row">
+                                                <div class="upper-info__column">
+                                                    <div class="star"></div>
+                                                    <div class="rating">4.5</div>
+                                                </div>
+                                                <div class="upper-info__column">
+                                                    <div class="upper-info__item"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div style="position: relative;"></div>
+                                        <div class="description">
+                                            <p class="marker">Англия
+                                            <p class="marker">0.33 л
+                                            <div class="name">Saison</div>
+                                            <div class="articul">Арт. 962961028</div>
+                                            <div class="old-price blank">&thinsp;</div>
+                                            <div class="price">350&thinsp;₽</div>
+                                        </div>
+                                        <div  class="cart"></div>
+                                    </div>  
+                                </div>
+                                <div class="card-list__column">     <!--КАРТОЧКА 6-->
+                                    <div class="card">
+                                        <div class="upper-info">
+                                            <div class="upper-info__row">
+                                                <div class="upper-info__column">
+                                                    <div class="star"></div>
+                                                    <div class="rating">4.1</div>
+                                                </div>
+                                                <div class="upper-info__column">
+                                                    <div class="upper-info__item"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div style="position: relative;"></div>
+                                        <div class="description">
+                                            <p class="marker">Россия
+                                            <p class="marker">0.5 л
+                                            <div class="name">Russian Imperial</div>
+                                            <div class="articul">Арт. 152975033</div>
+                                            <div class="old-price">360 ₽</div>
+                                            <div class="price-sale">260&thinsp;₽</div>
+                                        </div>
+                                        <div  class="cart"></div>
+                                    </div>  
+                                </div>
+                                <div class="card-list__column">     <!--КАРТОЧКА 7-->
+                                    <div class="card">
+                                        <div class="upper-info">
+                                            <div class="upper-info__row">
+                                                <div class="upper-info__column">
+                                                    <div class="star"></div>
+                                                    <div class="rating">3.5</div>
+                                                </div>
+                                                <div class="upper-info__column">
+                                                    <div class="upper-info__item"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div style="position: relative;"></div>
+                                        <div class="description">
+                                            <p class="marker">Мексика
+                                            <p class="marker">0.33 л
+                                            <div class="name">Populism</div>
+                                            <div class="articul">Арт. 962961028</div>
+                                            <div class="old-price blank">&thinsp;</div>
+                                            <div class="price">375&thinsp;₽</div>
+                                        </div>
+                                        <div  class="cart"></div>
+                                    </div>  
+                                </div>
+                                <div class="card-list__column">     <!--КАРТОЧКА 8-->
+                                    <div class="card">
+                                        <div class="upper-info">
+                                            <div class="upper-info__row">
+                                                <div class="upper-info__column">
+                                                    <div class="star"></div>
+                                                    <div class="rating">4.5</div>
+                                                </div>
+                                                <div class="upper-info__column">
+                                                    <div class="upper-info__item"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div style="position: relative;">
+                                            <div class="marker new">новинка</div>
+                                        </div>
+                                        <div class="description">
+                                            <p class="marker">Россия
+                                            <p class="marker">0.5 л
+                                            <div class="name">Ищу человека</div>
+                                            <div class="articul">Арт. 962961028</div>
+                                            <div class="old-price">300 ₽</div>
+                                            <div class="price-sale">280&thinsp;₽</div>
+                                        </div>
+                                        <div  class="cart"></div>
+                                    </div>  
+                                </div>
+                                <div class="card-list__column">     <!--КАРТОЧКА 9-->
+                                    <div class="card">
+                                        <div class="upper-info">
+                                            <div class="upper-info__row">
+                                                <div class="upper-info__column">
+                                                    <div class="star"></div>
+                                                    <div class="rating">4.8</div>
+                                                </div>
+                                                <div class="upper-info__column">
+                                                    <div class="upper-info__item"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div style="position: relative;">
+                                            <div class="marker new">новинка</div>
+                                        </div>
+                                        <div class="description">
+                                            <p class="marker">Россия
+                                            <p class="marker">0.5 л
+                                            <div class="name">Атомная прачечная</div>
+                                            <div class="articul">Арт. 962961028</div>
+                                            <div class="old-price blank">&thinsp;</div>
+                                            <div class="price">350&thinsp;₽</div>
+                                        </div>
+                                        <div  class="cart"></div>
+                                        <img  class="shadow" src="./img/Rectangle-32.png">
+                                    </div>  
+                                </div>
+                                <div class="card-list__column">     <!--КАРТОЧКА 10-->
+                                    <div class="card">
+                                        <div class="upper-info">
+                                            <div class="upper-info__row">
+                                                <div class="upper-info__column">
+                                                    <div class="star"></div>
+                                                    <div class="rating">4.5</div>
+                                                </div>
+                                                <div class="upper-info__column">
+                                                    <div class="upper-info__item"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div style="position: relative;"></div>
+                                        <div class="description">
+                                            <p class="marker">Мексика
+                                            <p class="marker">0.33 л
+                                            <div class="name">Chomolungma</div>
+                                            <div class="articul">Арт. 962961028</div>
+                                            <div class="old-price blank">&thinsp;</div>
+                                            <div class="price">299&thinsp;₽</div>
+                                        </div>
+                                        <div  class="cart"></div>
+                                    </div>  
+                                </div>
+                                <div class="card-list__column">     <!--КАРТОЧКА 11-->
+                                    <div class="card">
+                                        <div class="upper-info">
+                                            <div class="upper-info__row">
+                                                <div class="upper-info__column">
+                                                    <div class="star"></div>
+                                                    <div class="rating">5.0</div>
+                                                </div>
+                                                <div class="upper-info__column">
+                                                    <div class="upper-info__item"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div style="position: relative;"></div>
+                                        <div class="description">
+                                            <p class="marker">Англия
+                                            <p class="marker">0.33 л
+                                            <div class="name">Jaws Brewery</div>
+                                            <div class="articul">Арт. 152975033</div>
+                                            <div class="old-price blank">&thinsp;</div>
+                                            <div class="price">330&thinsp;₽</div>
+                                        </div>
+                                        <div  class="cart"></div>
+                                    </div>  
+                                </div>
+                                <div class="card-list__column">     <!--КАРТОЧКА 12-->
+                                    <div class="card">
+                                        <div class="upper-info">
+                                            <div class="upper-info__row">
+                                                <div class="upper-info__column">
+                                                    <div class="star"></div>
+                                                    <div class="rating">4.4</div>
+                                                </div>
+                                                <div class="upper-info__column">
+                                                    <div class="upper-info__item"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div style="position: relative;"></div>
+                                        <div class="description">
+                                            <p class="marker">США
+                                            <p class="marker">0.33 л
+                                            <div class="name">Jaws Lager</div>
+                                            <div class="articul">Арт. 152975033</div>
+                                            <div class="old-price blank">&thinsp;</div>
+                                            <div class="price">415&thinsp;₽</div>
+                                        </div>
+                                        <div  class="cart"></div>
+                                    </div>  
+                                </div>
+                                <div class="card-list__column">     <!--КАРТОЧКА 13-->
+                                    <div class="card">
+                                        <div class="upper-info">
+                                            <div class="upper-info__row">
+                                                <div class="upper-info__column">
+                                                    <div class="star"></div>
+                                                    <div class="rating">4.9</div>
+                                                </div>
+                                                <div class="upper-info__column">
+                                                    <div class="upper-info__item"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div style="position: relative;"></div>
+                                        <div class="description">
+                                            <p class="marker">Мексика
+                                            <p class="marker">0.5 л
+                                            <div class="name">Jaws EXP.2</div>
+                                            <div class="articul">Арт. 152975033</div>
+                                            <div class="old-price blank">&thinsp;</div>
+                                            <div class="price">449&thinsp;₽</div>
+                                        </div>
+                                        <div  class="cart"></div>
+                                    </div>  
+                                </div>
+                                <div class="card-list__column">     <!--КАРТОЧКА 14-->
+                                    <div class="card">
+                                        <div class="upper-info">
+                                            <div class="upper-info__row">
+                                                <div class="upper-info__column">
+                                                    <div class="star"></div>
+                                                    <div class="rating">4.2</div>
+                                                </div>
+                                                <div class="upper-info__column">
+                                                    <div class="upper-info__item"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div style="position: relative;"></div>
+                                        <div class="description">
+                                            <p class="marker">Франция
+                                            <p class="marker">0.75 л
+                                            <div class="name">Carolus Red</div>
+                                            <div class="articul">Арт. 1522355433</div>
+                                            <div class="old-price blank">&thinsp;</div>
+                                            <div class="price">699&thinsp;₽</div>
+                                        </div>
+                                        <div  class="cart"></div>
+                                    </div>  
+                                </div>
+                                <div class="card-list__column">     <!--КАРТОЧКА 15-->
+                                    <div class="card">
+                                        <div class="upper-info">
+                                            <div class="upper-info__row">
+                                                <div class="upper-info__column">
+                                                    <div class="star"></div>
+                                                    <div class="rating">5.0</div>
+                                                </div>
+                                                <div class="upper-info__column">
+                                                    <div class="upper-info__item"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div style="position: relative;"></div>
+                                        <div class="description">
+                                            <p class="marker">Франция
+                                            <p class="marker">0.75 л
+                                            <div class="name">Carolus Black</div>
+                                            <div class="articul">Арт. 152975033</div>
+                                            <div class="old-price blank">&thinsp;</div>
+                                            <div class="price">999&thinsp;₽</div>
+                                        </div>
+                                        <div  class="cart"></div>
+                                    </div>  
+                                </div>
+                                <div class="card-list__column">     <!--КАРТОЧКА 16-->
+                                    <div class="card">
+                                        <div class="upper-info">
+                                            <div class="upper-info__row">
+                                                <div class="upper-info__column">
+                                                    <div class="star"></div>
+                                                    <div class="rating">4.7</div>
+                                                </div>
+                                                <div class="upper-info__column">
+                                                    <div class="upper-info__item"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div style="position: relative;">
+                                            <div class="marker new">новинка</div>
+                                        </div>
+                                        <div class="description">
+                                            <p class="marker">Англия
+                                            <p class="marker">0.5 л
+                                            <div class="name">Old Engine Oil</div>
+                                            <div class="articul">Арт. 962961028</div>
+                                            <div class="old-price blank">&thinsp;</div>
+                                            <div class="price">295&thinsp;₽</div>
+                                        </div>
+                                        <div  class="cart"></div>
+                                    </div>  
+                                </div>
+                            </div>
+                            <div class="catalog-link"><a href="#"><span class="catalog-link__text">Прейти в каталог</span></a></div>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+            <footer>
+                <div class="footer-content1">       <!--ВЕРХНИЙ БЛОК ФУТЕРА-->
+                    <div class="footer-content1__row">
+                        <div class="footer-content1__column">
+                            <div class="footer-content1__row2">
+                                <div class="footer-content1__column2">
+                                    <ul>
+                                        <li>Покупателям</li>
+                                        <li><a href="#">Как выбрать товар</a></li>
+                                        <li><a href="#">Обратная связь</a></li>
+                                        <li><a href="#">Доставка и оплата</a></li>
+                                        <li><a href="#">Возвраты</a></li>
+                                        <li><a href="#">Акции</a></li>
+                                    </ul>
+                                </div>
+                                <div class="footer-content1__column2">
+                                    <ul>
+                                        <li>Сотрудничество</li>
+                                        <li><a href="#">Личный кабинет магазина</a></li>
+                                        <li><a href="#">Производителям</a></li>
+                                        <li><a href="#">Партнёрская программа</a></li>
+                                        <li><a href="#">Начать продавать на сайте</a></li>
+                                        <li><a href="#">Новости компании</a></li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
-                        <div class="strength-block">
-                            <div class="title">Крепость</div>
-                            <img class="line" src="img/line.svg" style="transform: rotate(180deg);">
-                        </div>
-                        <div class="brand-block">
-                            <div class="title">Бренд</div>
-                            <img class="line" src="./img/line.svg" style="transform: rotate(180deg);">
+                        <div class="footer-content1__column">
+                            <div class="footer-content1__item">
+                                <div class="item-1">
+                                    <div class="footer-phone">+7 495 365-11-02</div>
+                                    <div class="social">
+                                        <a href="#" class="instagram"></a><!--
+                                     --><a href="#" class="vk"></a><!--
+                                     --><a href="#" class="fb"></a>
+                                    </div>
+                                    <div class="user-agreement"><a href="#">Пользовательское соглашение</a></div>
+                                </div>
+                                <div class="item-2">
+                                    <div class="visa"></div><!--
+                                 --><div class="mastercard"></div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>  
-                <div class="main__column">
-                    <div class="card-list">                 
-                        <div class="card-list__row">        <!--КАРТОЧКИ ТОВАРОВ-->
-                            <div class="card-list__column">     <!--КАРТОЧКА 1-->
-                                <div class="card">
-                                    <div class="upper-info">
-                                        <div class="upper-info__row">
-                                            <div class="upper-info__column">
-                                                <div class="star"></div>
-                                                <div class="rating">4.5</div>
-                                            </div>
-                                            <div class="upper-info__column">
-                                                <div class="upper-info__item"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div style="position: relative;">
-                                        <div class="marker new">новинка</div>
-                                    </div>
-                                    <div class="description">
-                                        <p class="marker">Мексика
-                                        <p class="marker">0.5 л
-                                        <div class="name">Атомная прачечная</div>
-                                        <div class="articul">Арт. 962961028</div>
-                                        <div class="old-price">470 ₽</div>
-                                        <div class="price-sale">350&thinsp;₽</div>
-                                    </div>
-                                    <div  class="cart"></div>
-                                    <img  class="shadow" src="./img/Rectangle-32.png">
-                                </div>
-                            </div>
-                            <div class="card-list__column">     <!--КАРТОЧКА 2-->
-                                <div class="card">
-                                    <div class="upper-info">
-                                        <div class="upper-info__row">
-                                            <div class="upper-info__column">
-                                                <div class="star"></div>
-                                                <div class="rating">5.0</div>
-                                            </div>
-                                            <div class="upper-info__column">
-                                                <div class="upper-info__item"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div style="position: relative;">
-                                        <div class="marker new">новинка</div>
-                                    </div>
-                                    <div class="description">
-                                        <p class="marker">Германия
-                                        <p class="marker">0.33 л
-                                        <div class="name">Kasteel</div>
-                                        <div class="articul">Арт. 152975033</div>
-                                        <div class="old-price blank">&thinsp;</div>
-                                        <div class="price">399&thinsp;₽</div>
-                                    </div>
-                                    <div  class="cart"></div>
-                                </div>  
-                            </div>
-                            <div class="card-list__column">     <!--КАРТОЧКА 3-->
-                                <div class="card">
-                                    <div class="upper-info">
-                                        <div class="upper-info__row">
-                                            <div class="upper-info__column">
-                                                <div class="star"></div>
-                                                <div class="rating">4.0</div>
-                                            </div>
-                                            <div class="upper-info__column">
-                                                <div class="upper-info__item"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div style="position: relative;"></div>
-                                    <div class="description">
-                                        <p class="marker">Лихтенштейн
-                                        <p class="marker">0.5 л
-                                        <div class="name">Spot Session</div>
-                                        <div class="articul">Арт. 962961028</div>
-                                        <div class="old-price blank">&thinsp;</div>
-                                        <div class="price">349&thinsp;₽</div>
-                                    </div>
-                                    <div  class="cart"></div>
-                                    <img  class="shadow" src="./img/Rectangle-32.png">
-                                </div>  
-                            </div>
-                            <div class="card-list__column">     <!--КАРТОЧКА 4-->
-                                <div class="card">
-                                    <div class="upper-info">
-                                        <div class="upper-info__row">
-                                            <div class="upper-info__column">
-                                                <div class="star"></div>
-                                                <div class="rating">3.9</div>
-                                            </div>
-                                            <div class="upper-info__column">
-                                                <div class="upper-info__item"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div style="position: relative;"></div>
-                                    <div class="description">
-                                        <p class="marker">США
-                                        <p class="marker">0.75 л
-                                        <div class="name">Somnambula</div>
-                                        <div class="articul">Арт. 962961028</div>
-                                        <div class="old-price">1 299 ₽</div>
-                                        <div class="price-sale">899&thinsp;₽</div>
-                                    </div>
-                                    <div  class="cart"></div>
-                                    <img  class="shadow" src="./img/Rectangle-32.png">
-                                </div>  
-                            </div>
-                            <div class="card-list__column">     <!--КАРТОЧКА 5-->
-                                <div class="card">
-                                    <div class="upper-info">
-                                        <div class="upper-info__row">
-                                            <div class="upper-info__column">
-                                                <div class="star"></div>
-                                                <div class="rating">4.5</div>
-                                            </div>
-                                            <div class="upper-info__column">
-                                                <div class="upper-info__item"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div style="position: relative;"></div>
-                                    <div class="description">
-                                        <p class="marker">Англия
-                                        <p class="marker">0.33 л
-                                        <div class="name">Saison</div>
-                                        <div class="articul">Арт. 962961028</div>
-                                        <div class="old-price blank">&thinsp;</div>
-                                        <div class="price">350&thinsp;₽</div>
-                                    </div>
-                                    <div  class="cart"></div>
-                                    <img  class="shadow" src="./img/Rectangle-32.png">
-                                </div>  
-                            </div>
-                            <div class="card-list__column">     <!--КАРТОЧКА 6-->
-                                <div class="card">
-                                    <div class="upper-info">
-                                        <div class="upper-info__row">
-                                            <div class="upper-info__column">
-                                                <div class="star"></div>
-                                                <div class="rating">4.1</div>
-                                            </div>
-                                            <div class="upper-info__column">
-                                                <div class="upper-info__item"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div style="position: relative;"></div>
-                                    <div class="description">
-                                        <p class="marker">Россия
-                                        <p class="marker">0.5 л
-                                        <div class="name">Russian Imperial</div>
-                                        <div class="articul">Арт. 152975033</div>
-                                        <div class="old-price">360 ₽</div>
-                                        <div class="price-sale">260&thinsp;₽</div>
-                                    </div>
-                                    <div  class="cart"></div>
-                                </div>  
-                            </div>
-                            <div class="card-list__column">     <!--КАРТОЧКА 7-->
-                                <div class="card">
-                                    <div class="upper-info">
-                                        <div class="upper-info__row">
-                                            <div class="upper-info__column">
-                                                <div class="star"></div>
-                                                <div class="rating">3.5</div>
-                                            </div>
-                                            <div class="upper-info__column">
-                                                <div class="upper-info__item"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div style="position: relative;"></div>
-                                    <div class="description">
-                                        <p class="marker">Мексика
-                                        <p class="marker">0.33 л
-                                        <div class="name">Populism</div>
-                                        <div class="articul">Арт. 962961028</div>
-                                        <div class="old-price blank">&thinsp;</div>
-                                        <div class="price">375&thinsp;₽</div>
-                                    </div>
-                                    <div  class="cart"></div>
-                                    <img  class="shadow" src="./img/Rectangle-32.png">
-                                </div>  
-                            </div>
-                            <div class="card-list__column">     <!--КАРТОЧКА 8-->
-                                <div class="card">
-                                    <div class="upper-info">
-                                        <div class="upper-info__row">
-                                            <div class="upper-info__column">
-                                                <div class="star"></div>
-                                                <div class="rating">4.5</div>
-                                            </div>
-                                            <div class="upper-info__column">
-                                                <div class="upper-info__item"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div style="position: relative;">
-                                        <div class="marker new">новинка</div>
-                                    </div>
-                                    <div class="description">
-                                        <p class="marker">Россия
-                                        <p class="marker">0.5 л
-                                        <div class="name">Ищу человека</div>
-                                        <div class="articul">Арт. 962961028</div>
-                                        <div class="old-price">300 ₽</div>
-                                        <div class="price-sale">280&thinsp;₽</div>
-                                    </div>
-                                    <div  class="cart"></div>
-                                    <img  class="shadow" src="./img/Rectangle-32.png">
-                                </div>  
-                            </div>
-                            <div class="card-list__column">     <!--КАРТОЧКА 9-->
-                                <div class="card">
-                                    <div class="upper-info">
-                                        <div class="upper-info__row">
-                                            <div class="upper-info__column">
-                                                <div class="star"></div>
-                                                <div class="rating">4.8</div>
-                                            </div>
-                                            <div class="upper-info__column">
-                                                <div class="upper-info__item"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div style="position: relative;">
-                                        <div class="marker new">новинка</div>
-                                    </div>
-                                    <div class="description">
-                                        <p class="marker">Россия
-                                        <p class="marker">0.5 л
-                                        <div class="name">Атомная прачечная</div>
-                                        <div class="articul">Арт. 962961028</div>
-                                        <div class="old-price blank">&thinsp;</div>
-                                        <div class="price">350&thinsp;₽</div>
-                                    </div>
-                                    <div  class="cart"></div>
-                                    <img  class="shadow" src="./img/Rectangle-32.png">
-                                </div>  
-                            </div>
-                            <div class="card-list__column">     <!--КАРТОЧКА 10-->
-                                <div class="card">
-                                    <div class="upper-info">
-                                        <div class="upper-info__row">
-                                            <div class="upper-info__column">
-                                                <div class="star"></div>
-                                                <div class="rating">4.5</div>
-                                            </div>
-                                            <div class="upper-info__column">
-                                                <div class="upper-info__item"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div style="position: relative;"></div>
-                                    <div class="description">
-                                        <p class="marker">Мексика
-                                        <p class="marker">0.33 л
-                                        <div class="name">Chomolungma</div>
-                                        <div class="articul">Арт. 962961028</div>
-                                        <div class="old-price blank">&thinsp;</div>
-                                        <div class="price">299&thinsp;₽</div>
-                                    </div>
-                                    <div  class="cart"></div>
-                                    <img  class="shadow" src="./img/Rectangle-32.png">
-                                </div>  
-                            </div>
-                            <div class="card-list__column">     <!--КАРТОЧКА 11-->
-                                <div class="card">
-                                    <div class="upper-info">
-                                        <div class="upper-info__row">
-                                            <div class="upper-info__column">
-                                                <div class="star"></div>
-                                                <div class="rating">5.0</div>
-                                            </div>
-                                            <div class="upper-info__column">
-                                                <div class="upper-info__item"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div style="position: relative;"></div>
-                                    <div class="description">
-                                        <p class="marker">Англия
-                                        <p class="marker">0.33 л
-                                        <div class="name">Jaws Brewery</div>
-                                        <div class="articul">Арт. 152975033</div>
-                                        <div class="old-price blank">&thinsp;</div>
-                                        <div class="price">330&thinsp;₽</div>
-                                    </div>
-                                    <div  class="cart"></div>
-                                    <img  class="shadow" src="./img/Rectangle-32.png">
-                                </div>  
-                            </div>
-                            <div class="card-list__column">     <!--КАРТОЧКА 12-->
-                                <div class="card">
-                                    <div class="upper-info">
-                                        <div class="upper-info__row">
-                                            <div class="upper-info__column">
-                                                <div class="star"></div>
-                                                <div class="rating">4.4</div>
-                                            </div>
-                                            <div class="upper-info__column">
-                                                <div class="upper-info__item"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div style="position: relative;"></div>
-                                    <div class="description">
-                                        <p class="marker">США
-                                        <p class="marker">0.33 л
-                                        <div class="name">Jaws Lager</div>
-                                        <div class="articul">Арт. 152975033</div>
-                                        <div class="old-price blank">&thinsp;</div>
-                                        <div class="price">415&thinsp;₽</div>
-                                    </div>
-                                    <div  class="cart"></div>
-                                    <img  class="shadow" src="./img/Rectangle-32.png">
-                                </div>  
-                            </div>
-                            <div class="card-list__column">     <!--КАРТОЧКА 13-->
-                                <div class="card">
-                                    <div class="upper-info">
-                                        <div class="upper-info__row">
-                                            <div class="upper-info__column">
-                                                <div class="star"></div>
-                                                <div class="rating">4.9</div>
-                                            </div>
-                                            <div class="upper-info__column">
-                                                <div class="upper-info__item"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div style="position: relative;"></div>
-                                    <div class="description">
-                                        <p class="marker">Мексика
-                                        <p class="marker">0.5 л
-                                        <div class="name">Jaws EXP.2</div>
-                                        <div class="articul">Арт. 152975033</div>
-                                        <div class="old-price blank">&thinsp;</div>
-                                        <div class="price">449&thinsp;₽</div>
-                                    </div>
-                                    <div  class="cart"></div>
-                                    <img  class="shadow" src="./img/Rectangle-32.png">
-                                </div>  
-                            </div>
-                            <div class="card-list__column">     <!--КАРТОЧКА 14-->
-                                <div class="card">
-                                    <div class="upper-info">
-                                        <div class="upper-info__row">
-                                            <div class="upper-info__column">
-                                                <div class="star"></div>
-                                                <div class="rating">4.2</div>
-                                            </div>
-                                            <div class="upper-info__column">
-                                                <div class="upper-info__item"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div style="position: relative;"></div>
-                                    <div class="description">
-                                        <p class="marker">Франция
-                                        <p class="marker">0.75 л
-                                        <div class="name">Carolus Red</div>
-                                        <div class="articul">Арт. 1522355433</div>
-                                        <div class="old-price blank">&thinsp;</div>
-                                        <div class="price">699&thinsp;₽</div>
-                                    </div>
-                                    <div  class="cart"></div>
-                                    <img  class="shadow" src="./img/Rectangle-32.png">
-                                </div>  
-                            </div>
-                            <div class="card-list__column">     <!--КАРТОЧКА 15-->
-                                <div class="card">
-                                    <div class="upper-info">
-                                        <div class="upper-info__row">
-                                            <div class="upper-info__column">
-                                                <div class="star"></div>
-                                                <div class="rating">5.0</div>
-                                            </div>
-                                            <div class="upper-info__column">
-                                                <div class="upper-info__item"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div style="position: relative;"></div>
-                                    <div class="description">
-                                        <p class="marker">Франция
-                                        <p class="marker">0.75 л
-                                        <div class="name">Carolus Black</div>
-                                        <div class="articul">Арт. 152975033</div>
-                                        <div class="old-price blank">&thinsp;</div>
-                                        <div class="price">999&thinsp;₽</div>
-                                    </div>
-                                    <div  class="cart"></div>
-                                    <img  class="shadow" src="./img/Rectangle-32.png">
-                                </div>  
-                            </div>
-                            <div class="card-list__column">     <!--КАРТОЧКА 16-->
-                                <div class="card">
-                                    <div class="upper-info">
-                                        <div class="upper-info__row">
-                                            <div class="upper-info__column">
-                                                <div class="star"></div>
-                                                <div class="rating">4.7</div>
-                                            </div>
-                                            <div class="upper-info__column">
-                                                <div class="upper-info__item"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div style="position: relative;">
-                                        <div class="marker new">новинка</div>
-                                    </div>
-                                    <div class="description">
-                                        <p class="marker">Англия
-                                        <p class="marker">0.5 л
-                                        <div class="name">Old Engine Oil</div>
-                                        <div class="articul">Арт. 962961028</div>
-                                        <div class="old-price blank">&thinsp;</div>
-                                        <div class="price">295&thinsp;₽</div>
-                                    </div>
-                                    <div  class="cart"></div>
-                                    <img  class="shadow" src="./img/Rectangle-32.png">
-                                </div>  
-                            </div>
-                        </div>
-                        <div class="catalog-link"><a href="#"><span class="catalog-link__text">Прейти в каталог</span></a></div>
+                </div>
+
+                <div class="line"></div>
+
+                <div class="footer-content2">       <!--НИЖНИЙ БЛОК ФУТЕРА-->
+                    <div class="footer-logo"></div>
+                    <div class="footer-info">
+                        <a href="#" class="qa"></a>
+                        <a href="#" class="stat-link">Статистика</a>
+                        <div class="vertical-line"></div>
+                        <div class="year">© 2021</div>
+                        <div class="trademark">ПивМагаз</div>
                     </div>
-                </div> 
-            </div>
+                </div>
+            </footer>
         </div>
     </body>
 </html>
