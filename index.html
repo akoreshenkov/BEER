@@ -61,15 +61,15 @@
                 <div class="main__row">
                     <div class="main__column">
                         <div class="filters">                   <!--ФИЛЬТРЫ-->
-                            <div class="question-block">
+                            <div class="question-block">        <!--НЕ ЗНАЮ ЧЕГО ХОЧУ-->
                                 <span class="question-block__text">Не знаю чего хочу</span>
                             </div>
-                            <div class="price-block">
+                            <div class="price-block">           <!--ЦЕНА-->
                                 <div class="title">Цена</div>
                                 <input class="from" maxlength="4" placeholder="380" type="tel" name="price">
                                 <input class="to" maxlength="4" placeholder="760" type="tel" name="price">
                             </div>
-                            <div class="volume-block">
+                            <div class="volume-block">          <!--ОБЪЕМ-->
                                 <div class="title">Объем</div>
                                 <img class="line" src="./img/line.svg">
                                 <div class="volume-block__container">
@@ -86,14 +86,32 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="strength-block">
+                            <div class="strength-block">        <!--КРЕПОСТЬ-->
                                 <div class="title">Крепость</div>
                                 <img class="line" src="img/line.svg" style="transform: rotate(180deg);">
                             </div>
-                            <div class="brand-block">
+                            <div class="brand-block">           <!--БРЕНД-->
                                 <div class="title">Бренд</div>
                                 <img class="line" src="./img/line.svg" style="transform: rotate(180deg);">
                             </div>
+
+                            <details open>
+                                <summary><div class="title">Объем</div></summary>
+                                <div class="volume-block__container">
+                                    <div class="volume-block__column">
+                                        <div class="volume-block__item"><span class="active">0.33 л</span></div>
+                                        <div class="volume-block__item"><span>0.355 л</span></div>
+                                        <div class="volume-block__item"><span>0.4 л</span></div>
+                                        <div class="volume-block__item"><span class="active">0.5 л</span></div>
+                                    </div>
+                                    <div class="volume-block__column">
+                                        <div class="volume-block__item"><span class="active">0.75 л</span></div>
+                                        <div class="volume-block__item"><span>1 л</span></div>
+                                        <div class="volume-block__item"><span>5 л</span></div>
+                                    </div>
+                                </div>
+                            </details>
+
                         </div>
                     </div>  
                     <div class="main__column">
