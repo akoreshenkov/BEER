@@ -73,6 +73,7 @@ h1, h2, h3, h4, h5, h6 {
 body {
   font-family: "Roboto", sans-serif;
   background-color: #F2F2F2;
+  min-width: 1340px;
 }
 
 ::-webkit-scrollbar-button {
@@ -127,7 +128,8 @@ body {
 }
 
 header {
-  width: 1340px;
+  width: 1380px;
+  padding: 0 20px;
   margin: 0 auto;
 }
 header .upper-nav {
@@ -348,6 +350,7 @@ header .lower-nav .cart-list::after {
   right: -7px;
   top: -11px;
   padding: 2px 6px;
+  border: 1px solid #f2f2f2;
   border-radius: 10px;
   background: #ff5858;
   font-weight: 500;
@@ -360,7 +363,8 @@ header .lower-nav .cart-list:hover {
 }
 
 .main {
-  width: 1340px;
+  width: 1380px;
+  padding: 0 20px;
   margin: 0 auto;
   flex: 1 1 auto;
 }
@@ -970,6 +974,7 @@ header .lower-nav .cart-list:hover {
 
 footer {
   background: #393939;
+  min-width: 1380px;
   padding: 0 0 16px 0;
   margin-top: 40px;
 }
@@ -992,9 +997,9 @@ footer .line {
   border-top: 1px solid #555555;
 }
 footer .footer-content1 {
-  width: 1340px;
+  width: 1380px;
   margin: 0 auto;
-  padding: 50px 0;
+  padding: 50px 20px;
 }
 footer .footer-content1__row {
   display: flex;
@@ -1081,7 +1086,8 @@ footer .footer-content2 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 1340px;
+  width: 1380px;
+  padding: 0 20px;
   margin: 0 auto;
   height: 50px;
 }
