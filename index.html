@@ -69,49 +69,70 @@
                                 <input class="from" maxlength="4" placeholder="380" type="tel" name="price">
                                 <input class="to" maxlength="4" placeholder="760" type="tel" name="price">
                             </div>
-                            <div class="volume-block">          <!--ОБЪЕМ-->
-                                <div class="title">Объем</div>
-                                <img class="line" src="./img/line.svg">
+                            <details open>                      <!--ОБЪЕМ-->
+                                <summary>
+                                    <div class="title">Объем</div>
+                                    <div class="line"></div>
+                                </summary>
                                 <div class="volume-block__container">
                                     <div class="volume-block__column">
-                                        <div class="volume-block__item"><span class="active">0.33 л</span></div>
-                                        <div class="volume-block__item"><span>0.355 л</span></div>
-                                        <div class="volume-block__item"><span>0.4 л</span></div>
-                                        <div class="volume-block__item"><span class="active">0.5 л</span></div>
+                                        <div class="volume-block__item">
+                                            <input type="checkbox" name="a033" id="a033" class="volume-block__input">
+                                            <label class="volume-block__label" for="a033">0.33 л </label>
+                                        </div>
+                                        <div class="volume-block__item">
+                                            <input type="checkbox" name="a0355" id="a0335" class="volume-block__input">
+                                            <label class="volume-block__label" for="a0335">0.355 л</label>
+                                        </div>
+                                        <div class="volume-block__item">
+                                            <input type="checkbox" name="a04" id="a04" class="volume-block__input">
+                                            <label class="volume-block__label" for="a04">0.4 л</label>
+                                        </div>
+                                        <div class="volume-block__item">
+                                            <input type="checkbox" name="a05" id="a05" class="volume-block__input">
+                                            <label class="volume-block__label" for="a05">0.5 л</label>
+                                        </div>
                                     </div>
                                     <div class="volume-block__column">
-                                        <div class="volume-block__item"><span class="active">0.75 л</span></div>
-                                        <div class="volume-block__item"><span>1 л</span></div>
-                                        <div class="volume-block__item"><span>5 л</span></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="strength-block">        <!--КРЕПОСТЬ-->
-                                <div class="title">Крепость</div>
-                                <img class="line" src="img/line.svg" style="transform: rotate(180deg);">
-                            </div>
-                            <div class="brand-block">           <!--БРЕНД-->
-                                <div class="title">Бренд</div>
-                                <img class="line" src="./img/line.svg" style="transform: rotate(180deg);">
-                            </div>
-
-                            <details open>
-                                <summary><div class="title">Объем</div></summary>
-                                <div class="volume-block__container">
-                                    <div class="volume-block__column">
-                                        <div class="volume-block__item"><span class="active">0.33 л</span></div>
-                                        <div class="volume-block__item"><span>0.355 л</span></div>
-                                        <div class="volume-block__item"><span>0.4 л</span></div>
-                                        <div class="volume-block__item"><span class="active">0.5 л</span></div>
-                                    </div>
-                                    <div class="volume-block__column">
-                                        <div class="volume-block__item"><span class="active">0.75 л</span></div>
-                                        <div class="volume-block__item"><span>1 л</span></div>
-                                        <div class="volume-block__item"><span>5 л</span></div>
+                                        <div class="volume-block__item">
+                                            <input type="checkbox" name="a075" id="a075" class="volume-block__input">
+                                            <label class="volume-block__label" for="a075">0.75 л </label>
+                                        </div>
+                                        <div class="volume-block__item">
+                                            <input type="checkbox" name="a10" id="a10" class="volume-block__input">
+                                            <label class="volume-block__label" for="a10">1 л</label>
+                                        </div>
+                                        <div class="volume-block__item">
+                                            <input type="checkbox" name="a50" id="a50" class="volume-block__input">
+                                            <label class="volume-block__label" for="a50">5 л</label>
+                                        </div>
                                     </div>
                                 </div>
                             </details>
-
+                            <details>                       <!--КРЕПОСТЬ-->
+                                <summary>
+                                    <div class="title">
+                                        Крепость
+                                    </div>
+                                    <div class="line"></div>
+                                </summary>
+                                <div class="volume-block__container">
+                                    <div class="volume-block__column full-width">
+                                        <div class="volume-block__item">
+                                            <input type="radio" name="strength" id="less5">
+                                            <label for="less5">Менее 5%</label>
+                                        </div>
+                                        <div class="volume-block__item">
+                                            <input type="radio" name="strength" id="more5less10">
+                                            <label for="more5less10">От 5% до 10%</label>
+                                        </div>
+                                        <div class="volume-block__item">
+                                            <input type="radio" name="strength" id="more10">
+                                            <label for="more10">Более 10%</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </details>
                         </div>
                     </div>  
                     <div class="main__column">
@@ -581,9 +602,7 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="line"></div>
-
                 <div class="footer-content2">       <!--НИЖНИЙ БЛОК ФУТЕРА-->
                     <div class="footer-logo"></div>
                     <div class="footer-info">

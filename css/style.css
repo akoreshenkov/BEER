@@ -507,19 +507,15 @@ header .lower-nav .cart-list:hover {
 
 .filters {
   width: 318px;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 30px;
 }
 .filters .title {
   font-size: 20px;
   font-weight: 500;
   color: #393939;
-}
-.filters .line {
-  position: absolute;
-  top: 24px;
-  right: 24px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 .filters .question-block {
   display: flex;
@@ -638,97 +634,97 @@ header .lower-nav .cart-list:hover {
 .filters .price-block .to:focus::placeholder {
   color: #cacaca;
 }
-.filters .volume-block {
-  height: 240px;
-  margin-top: 24px;
-  position: relative;
-  padding: 20px;
-  border-radius: 16px;
-  background: #ffffff;
-}
-.filters .volume-block .volume-block__container {
-  display: flex;
-  justify-content: start;
-  margin-top: 20px;
-}
-.filters .volume-block .volume-block__container .volume-block__column {
-  flex-direction: column;
-  width: 40%;
-  margin-right: 10px;
-}
-.filters .volume-block .volume-block__container .volume-block__column .volume-block__item {
-  margin-bottom: 13px;
-}
-.filters .volume-block .volume-block__container .volume-block__column .volume-block__item span {
-  display: inline-block;
-  border: 2px solid #B9B9B9;
-  color: #393939;
-  height: 28px;
-  border-radius: 20px;
-  line-height: 115%;
-  padding: 4px 12px;
-  text-align: left;
-  font-size: 16px;
-  font-weight: 500;
-}
-.filters .volume-block .volume-block__container .volume-block__column .volume-block__item span:hover {
-  cursor: pointer;
-  position: relative;
-  padding: 4px 13px;
-  color: #ffffff;
-  background: #FFC003;
-  border: none;
-  line-height: 140%;
-  transition: background-color 0.15s ease-in-out;
-}
-.filters .volume-block .volume-block__container .volume-block__column .volume-block__item span:hover:after {
-  content: "";
-  display: inline-block;
-  width: 24px;
-  height: 12px;
-  background: url("../img/cross.svg") 100% 50%/auto no-repeat;
-}
 .filters details {
   height: 55px;
-  margin-top: 24px;
+  margin: 24px 0;
   position: relative;
   background: #ffffff;
+  border-radius: 16px;
+  transition: 0.15s linear;
+}
+.filters details summary {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
   border-radius: 16px;
 }
 .filters details summary::-webkit-details-marker {
   display: none;
 }
-.filters details summary {
-  cursor: pointer;
+.filters details summary .title {
+  display: inline-block;
   height: 55px;
-  list-style: none;
+  padding: 18px;
+  border-radius: 16px;
   font-size: 20px;
   font-weight: 500;
   color: #393939;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
-.filters details summary .title {
+.filters details summary .line {
+  display: inline-block;
+  margin-right: 5px;
   height: 55px;
+  width: 58px;
   padding: 18px;
+  border-radius: 16px;
+  background: url("../img/line.svg") 50% 46%/22px 10px no-repeat;
+  transition: 0.15s linear;
 }
 .filters details .volume-block__container {
   display: flex;
   justify-content: start;
   margin: -20px 0 0 0;
   padding: 30px 0 10px 18px;
-  background: #ffffff;
   border-radius: 0 0 16px 16px;
 }
 .filters details .volume-block__container .volume-block__column {
-  flex-direction: column;
   width: 40%;
   margin-right: 10px;
 }
 .filters details .volume-block__container .volume-block__column .volume-block__item {
-  margin-bottom: 13px;
+  display: flex;
+  align-items: center;
+  height: 28px;
+  border-radius: 20px;
+  margin-bottom: 12px;
 }
-.filters details .volume-block__container .volume-block__column .volume-block__item span {
+.filters details .volume-block__container .volume-block__column .volume-block__item:last-child {
+  margin-bottom: 0;
+}
+.filters details .volume-block__container .volume-block__column .volume-block__item .volume-block__input {
+  position: absolute;
+  left: -9999px;
+}
+.filters details .volume-block__container .volume-block__column .volume-block__item .volume-block__input:checked ~ label {
+  background: #FFC003;
+  cursor: default;
+  position: relative;
+  padding: 4px 13px;
+  color: #ffffff;
+  background: #FFC003;
+  border: none;
+  line-height: 140%;
+  transition: 0.15s linear;
+}
+.filters details .volume-block__container .volume-block__column .volume-block__item .volume-block__input:checked ~ label:after {
+  content: "";
+  cursor: pointer;
   display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin-left: 8px;
+  background: url("../img/cross.svg") 100% 50%/auto no-repeat;
+}
+.filters details .volume-block__container .volume-block__column .volume-block__item .volume-block__label {
+  cursor: pointer;
   border: 2px solid #B9B9B9;
+  display: inline-block;
   color: #393939;
   height: 28px;
   border-radius: 20px;
@@ -737,23 +733,101 @@ header .lower-nav .cart-list:hover {
   text-align: left;
   font-size: 16px;
   font-weight: 500;
+  transition: 0.15s linear;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
-.filters details .volume-block__container .volume-block__column .volume-block__item span:hover {
+.filters details .volume-block__container .full-width {
+  display: block;
+  width: 100%;
+  margin-right: 18px;
+  flex: 1 1 auto;
+}
+.filters details .volume-block__container .full-width label {
   cursor: pointer;
   position: relative;
-  padding: 4px 13px;
-  color: #ffffff;
-  background: #FFC003;
-  border: none;
-  line-height: 140%;
-  transition: background-color 0.15s ease-in-out;
+  display: inline-block;
+  color: #393939;
+  height: 28px;
+  line-height: 100%;
+  padding: 4px 0 4px 23px;
+  font-size: 16px;
+  font-weight: 500;
+  transition: 0.15s linear;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
-.filters details .volume-block__container .volume-block__column .volume-block__item span:hover:after {
+.filters details .volume-block__container .full-width label:before {
   content: "";
   display: inline-block;
-  width: 24px;
-  height: 12px;
-  background: url("../img/cross.svg") 100% 50%/auto no-repeat;
+  position: absolute;
+  left: 0;
+  top: 13%;
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+  background: url("../img/radio-not-checked.svg") 50%/16px no-repeat;
+}
+.filters details .volume-block__container .full-width input {
+  display: none;
+}
+.filters details .volume-block__container .full-width input:checked + label:before {
+  background: url("../img/radio-checked.svg") 50%/16px no-repeat;
+}
+.filters details .volume-block__container .full-width input:not(checked) + label:hover:before {
+  opacity: 80%;
+}
+.filters details[open] {
+  height: 242px;
+  transition: 0.2s linear;
+}
+.filters details[open] .volume-block__item {
+  -webkit-animation: name-in 0.4s linear 1;
+          animation: name-in 0.4s linear 1;
+}
+@-webkit-keyframes name-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+@keyframes name-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+.filters details[open] .line {
+  transform: rotate(180deg);
+  transition: 0.15s linear;
+}
+.filters details[open]:last-child {
+  height: 190px;
+  transition: 0.15s linear;
+}
+.filters details[open]:last-child .volume-block__item {
+  -webkit-animation: name-in 0.3s linear 1;
+          animation: name-in 0.3s linear 1;
+}
+@keyframes name-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+.filters details[open]:last-child .line {
+  transform: rotate(180deg);
+  transition: 0.15s linear;
 }
 .filters .strength-block {
   height: 55px;
@@ -1152,7 +1226,7 @@ footer .footer-content1__row2 {
 footer .footer-content1__column2 {
   padding: 0 75px;
 }
-footer .footer-content1__column2 li:nth-child(1) {
+footer .footer-content1__column2 li:first-child {
   margin-bottom: 20px;
   font-weight: 700;
   font-size: 16px;
