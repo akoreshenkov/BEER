@@ -235,6 +235,10 @@ header .lower-nav .catalog-buttom {
   border-radius: 23px;
   background: #FFC003;
   cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 header .lower-nav .catalog-buttom:hover {
   background: rgba(255, 191, 0, 0.5882352941);

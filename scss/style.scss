@@ -159,6 +159,7 @@ header {
             border-radius: 23px;
             background: #FFC003;
             cursor: pointer;
+            user-select: none;
             &:hover {
                 background: #ffbf0096;
             }
