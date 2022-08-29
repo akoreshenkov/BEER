@@ -603,12 +603,12 @@ header {
                             background: #FFC003;
                             cursor: default;
                             position: relative;
-                            padding: 4px 13px;
+                            padding: 4px 12px;
 
                             color: #ffffff;
                             background: #FFC003;
-                            border: none;
-                            line-height: 140%;
+                            border: 2px solid #FFC003;
+                            line-height: 115%;
                             transition: 0.15s linear;
                             &:after {
                                 content: "";
